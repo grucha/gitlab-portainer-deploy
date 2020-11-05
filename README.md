@@ -22,7 +22,9 @@ deploy:
     PORTAINER_USERNAME: ""
     PORTAINER_PASSWORD: ""
   script:
-    - deploy --stack_name=x --service-name=y --new-image=z:1.0 -e SOME_STACKFILE_VAR=value
+    - deploy --stack_name=xxx --service-name=yyy --new-image=zzz:1.0 -e SOME_STACKFILE_VAR=value
+    - OR:
+    - deploy --stack_name=xxx --service-name=yyy,aaa --new-image=zzz:1.0 -e SOME_STACKFILE_VAR=value
   tags:
     - docker
 ```
